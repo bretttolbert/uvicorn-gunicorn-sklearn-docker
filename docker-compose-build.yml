@@ -1,0 +1,8 @@
+version: '3'
+services:
+  latest:
+    build: ./python3.7-alpine3.8
+    image: bretttolbert/uvicorn-gunicorn-sklearn:latest
+  python3.7-alpine3.8:
+    build: ./python3.7-alpine3.8
+    image: bretttolbert/uvicorn-gunicorn:python3.7-alpine3.8
